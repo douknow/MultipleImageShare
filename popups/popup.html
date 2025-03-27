@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eight Bro (Red Note Share)</title>
+    <style>
+      .center {
+        min-height: 100px;
+        min-width: 200px;
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1ch;
+        background-color: lightseagreen;
+      }
+      .text {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1ch;
+        width: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1>Share Note (Red Note Share)</h1>
+      
+      <div id="status-container">
+        <div id="status-text"></div>
+        <button id="copy-image-button" style="display: none">Copy Image to Pasteboard</button>
+        <div id="share-result" style="display: none; overflow: scroll; max-height: 500px;">
+          <img
+            src=""
+            alt=""
+            id="share-result-img"
+            style="width: 90%;"
+          />
+        </div>
+      </div>
+
+    </main>
+  </body>
+
+  <script src="popup.js"></script>
+</html>
